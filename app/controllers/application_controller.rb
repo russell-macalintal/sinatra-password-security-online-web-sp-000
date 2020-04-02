@@ -36,8 +36,7 @@ class ApplicationController < Sinatra::Base
 		user = User.find_by(username: params[:username])
 
 		if user
-			"Success"
-			# redirect '/success'
+			redirect '/success'
 		else
 			redirect '/failure'
 		end
